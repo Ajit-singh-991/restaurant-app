@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "ng serve customer-app",
-    "start:customer": "ng serve customer-app --port 4200",
+    "start:customer": "ng serve customer-app --port 4200 --host 0.0.0.0",
     "start:waiter": "ng serve waiter-app --port 4201",
     "start:kitchen": "ng serve kitchen-app --port 4202",
     "start:admin": "ng serve admin-app --port 4203",

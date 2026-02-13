@@ -112,6 +112,8 @@ public class RecommendationService {
         Map<Long, Long> prevQty = prevSelling.stream()
                 .collect(Collectors.toMap(r -> (Long) r[0], r -> ((Number) r[2]).longValue(), Long::sum));
 
+        // Build (row, growth, previousQty) then sort by growth desc, then previousQty asc (new items first when tied)
+        record RowWithGrowth(Object[] row, double growth, long previousQty) {}
         List<RecommendedItem> trending = topSelling.stream()
                 .map(row -> {
                     Long itemId = (Long) row[0];
@@ -120,18 +122,23 @@ public class RecommendationService {
                     double growth = previousQty > 0
                             ? ((double) (currentQty - previousQty) / previousQty) * 100
                             : 100.0;
-
+                    return new RowWithGrowth(row, Math.max(0, growth), previousQty);
+                })
+                .sorted(Comparator
+                        .comparingDouble(RowWithGrowth::growth).reversed()
+                        .thenComparingLong(RowWithGrowth::previousQty))
+                .limit(10)
+                .map(r -> {
+                    Object[] row = r.row();
                     return RecommendedItem.builder()
-                            .itemId(itemId)
+                            .itemId((Long) row[0])
                             .itemName((String) row[1])
-                            .score(Math.max(0, growth))
-                            .reason(growth > 0
-                                    ? String.format("%.0f%% increase from last week", growth)
+                            .score(r.growth())
+                            .reason(r.growth() > 0
+                                    ? String.format("%.0f%% increase from last week", r.growth())
                                     : "Consistently popular")
                             .build();
                 })
-                .sorted(Comparator.comparingDouble(RecommendedItem::getScore).reversed())
-                .limit(10)
                 .collect(Collectors.toList());
 
         return TrendingItems.builder()

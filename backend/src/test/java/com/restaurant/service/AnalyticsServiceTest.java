@@ -6,6 +6,7 @@ import com.restaurant.entity.Order;
 import com.restaurant.entity.RestaurantTable;
 import com.restaurant.repository.MenuItemRepository;
 import com.restaurant.repository.OrderRepository;
+import com.restaurant.repository.PaymentRepository;
 import com.restaurant.repository.TableRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,6 +34,9 @@ class AnalyticsServiceTest {
 
     @Mock
     private TableRepository tableRepository;
+
+    @Mock
+    private PaymentRepository paymentRepository;
 
     @InjectMocks
     private AnalyticsService analyticsService;
@@ -75,6 +79,11 @@ class AnalyticsServiceTest {
                 new Object[]{"DINE_IN", 15L},
                 new Object[]{"TAKEAWAY", 10L}
         ));
+        when(paymentRepository.countByPaymentMethodBetween(any(), any())).thenReturn(List.of(
+                new Object[]{"CARD", 15L},
+                new Object[]{"CASH", 10L}
+        ));
+        when(orderRepository.findTop10ByOrderByCreatedAtDesc()).thenReturn(List.of());
         when(orderRepository.findTopSellingItems(any(), any())).thenReturn(List.of(
                 new Object[]{1L, "Butter Chicken", 20L, new BigDecimal("7000.00")},
                 new Object[]{2L, "Dal Makhani", 15L, new BigDecimal("3750.00")}
@@ -104,6 +113,8 @@ class AnalyticsServiceTest {
         when(tableRepository.findAll()).thenReturn(List.of(availableTable));
         when(orderRepository.countByStatusBetween(any(), any())).thenReturn(List.of());
         when(orderRepository.countByOrderTypeBetween(any(), any())).thenReturn(List.of());
+        when(paymentRepository.countByPaymentMethodBetween(any(), any())).thenReturn(List.of());
+        when(orderRepository.findTop10ByOrderByCreatedAtDesc()).thenReturn(List.of());
         when(orderRepository.findTopSellingItems(any(), any())).thenReturn(List.of());
 
         AnalyticsDto.DashboardStats stats = analyticsService.getDashboardStats();
@@ -126,6 +137,8 @@ class AnalyticsServiceTest {
         when(tableRepository.findAll()).thenReturn(List.of());
         when(orderRepository.countByStatusBetween(any(), any())).thenReturn(List.of());
         when(orderRepository.countByOrderTypeBetween(any(), any())).thenReturn(List.of());
+        when(paymentRepository.countByPaymentMethodBetween(any(), any())).thenReturn(List.of());
+        when(orderRepository.findTop10ByOrderByCreatedAtDesc()).thenReturn(List.of());
 
         // Return 15 items to verify limit of 10
         List<Object[]> fifteenItems = new java.util.ArrayList<>();

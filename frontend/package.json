@@ -19,7 +19,8 @@
     "build:admin": "ng build admin-app --configuration production",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "start-server-and-test start:customer 4200 cypress run",
+    "cypress:run": "cypress run",
+    "e2e": "start-server-and-test start:customer 4200 cypress:run",
     "e2e:open": "cypress open"
   },
   "dependencies": {

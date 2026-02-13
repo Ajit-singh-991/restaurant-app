@@ -1,0 +1,94 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "MENU": "Menu",
+    "CART": "Cart",
+    "ORDERS": "My Orders",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "PROFILE": "Profile"
+  },
+  "MENU": {
+    "TITLE": "Our Menu",
+    "SEARCH": "Search menu items...",
+    "ALL_CATEGORIES": "All",
+    "ADD_TO_CART": "Add to Cart",
+    "OUT_OF_STOCK": "Out of Stock",
+    "PREP_TIME": "Prep time",
+    "MINUTES": "min",
+    "NO_ITEMS": "No items found",
+    "VEGETARIAN": "Vegetarian",
+    "VEGAN": "Vegan",
+    "GLUTEN_FREE": "Gluten Free"
+  },
+  "CART": {
+    "TITLE": "Your Cart",
+    "EMPTY": "Your cart is empty",
+    "BROWSE_MENU": "Browse Menu",
+    "SUBTOTAL": "Subtotal",
+    "TAX": "Tax",
+    "TOTAL": "Total",
+    "CHECKOUT": "Checkout",
+    "REMOVE": "Remove",
+    "CLEAR": "Clear Cart",
+    "SPECIAL_INSTRUCTIONS": "Special Instructions"
+  },
+  "ORDER": {
+    "TITLE": "My Orders",
+    "ORDER_NUMBER": "Order #",
+    "STATUS": "Status",
+    "TOTAL": "Total",
+    "DATE": "Date",
+    "ITEMS": "Items",
+    "NO_ORDERS": "No orders yet",
+    "TRACK": "Track Order",
+    "REVIEW": "Leave Review",
+    "TYPE": {
+      "DINE_IN": "Dine In",
+      "TAKEAWAY": "Takeaway",
+      "DELIVERY": "Delivery"
+    }
+  },
+  "AUTH": {
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "EMAIL": "Email",
+    "FULL_NAME": "Full Name",
+    "PHONE": "Phone",
+    "FORGOT_PASSWORD": "Forgot Password?",
+    "NO_ACCOUNT": "Don't have an account?",
+    "HAS_ACCOUNT": "Already have an account?"
+  },
+  "REVIEW": {
+    "TITLE": "Reviews",
+    "WRITE": "Write a Review",
+    "RATING": "Rating",
+    "COMMENT": "Your review",
+    "SUBMIT": "Submit Review",
+    "NO_REVIEWS": "No reviews yet",
+    "RESPONSE": "Management Response"
+  },
+  "LOYALTY": {
+    "TITLE": "Loyalty Program",
+    "POINTS": "Points",
+    "TIER": "Tier",
+    "REDEEM": "Redeem Points",
+    "HISTORY": "Transaction History",
+    "NEXT_TIER": "points to next tier"
+  },
+  "COMMON": {
+    "LOADING": "Loading...",
+    "ERROR": "Something went wrong",
+    "SAVE": "Save",
+    "CANCEL": "Cancel",
+    "CONFIRM": "Confirm",
+    "DELETE": "Delete",
+    "EDIT": "Edit",
+    "BACK": "Back",
+    "CLOSE": "Close",
+    "YES": "Yes",
+    "NO": "No"
+  }
+}

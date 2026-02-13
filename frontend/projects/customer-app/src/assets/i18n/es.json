@@ -1,0 +1,94 @@
+{
+  "NAV": {
+    "HOME": "Inicio",
+    "MENU": "Men\u00fa",
+    "CART": "Carrito",
+    "ORDERS": "Mis Pedidos",
+    "LOGIN": "Iniciar Sesi\u00f3n",
+    "LOGOUT": "Cerrar Sesi\u00f3n",
+    "PROFILE": "Perfil"
+  },
+  "MENU": {
+    "TITLE": "Nuestro Men\u00fa",
+    "SEARCH": "Buscar en el men\u00fa...",
+    "ALL_CATEGORIES": "Todos",
+    "ADD_TO_CART": "A\u00f1adir al Carrito",
+    "OUT_OF_STOCK": "Agotado",
+    "PREP_TIME": "Tiempo de preparaci\u00f3n",
+    "MINUTES": "min",
+    "NO_ITEMS": "No se encontraron art\u00edculos",
+    "VEGETARIAN": "Vegetariano",
+    "VEGAN": "Vegano",
+    "GLUTEN_FREE": "Sin Gluten"
+  },
+  "CART": {
+    "TITLE": "Tu Carrito",
+    "EMPTY": "Tu carrito est\u00e1 vac\u00edo",
+    "BROWSE_MENU": "Ver Men\u00fa",
+    "SUBTOTAL": "Subtotal",
+    "TAX": "Impuesto",
+    "TOTAL": "Total",
+    "CHECKOUT": "Pagar",
+    "REMOVE": "Eliminar",
+    "CLEAR": "Vaciar Carrito",
+    "SPECIAL_INSTRUCTIONS": "Instrucciones Especiales"
+  },
+  "ORDER": {
+    "TITLE": "Mis Pedidos",
+    "ORDER_NUMBER": "Pedido #",
+    "STATUS": "Estado",
+    "TOTAL": "Total",
+    "DATE": "Fecha",
+    "ITEMS": "Art\u00edculos",
+    "NO_ORDERS": "A\u00fan no hay pedidos",
+    "TRACK": "Rastrear Pedido",
+    "REVIEW": "Dejar Rese\u00f1a",
+    "TYPE": {
+      "DINE_IN": "Comer Aqu\u00ed",
+      "TAKEAWAY": "Para Llevar",
+      "DELIVERY": "Entrega a Domicilio"
+    }
+  },
+  "AUTH": {
+    "LOGIN": "Iniciar Sesi\u00f3n",
+    "REGISTER": "Registrarse",
+    "USERNAME": "Usuario",
+    "PASSWORD": "Contrase\u00f1a",
+    "EMAIL": "Correo",
+    "FULL_NAME": "Nombre Completo",
+    "PHONE": "Tel\u00e9fono",
+    "FORGOT_PASSWORD": "\u00bfOlvidaste tu contrase\u00f1a?",
+    "NO_ACCOUNT": "\u00bfNo tienes cuenta?",
+    "HAS_ACCOUNT": "\u00bfYa tienes cuenta?"
+  },
+  "REVIEW": {
+    "TITLE": "Rese\u00f1as",
+    "WRITE": "Escribir una Rese\u00f1a",
+    "RATING": "Calificaci\u00f3n",
+    "COMMENT": "Tu rese\u00f1a",
+    "SUBMIT": "Enviar Rese\u00f1a",
+    "NO_REVIEWS": "A\u00fan no hay rese\u00f1as",
+    "RESPONSE": "Respuesta del Establecimiento"
+  },
+  "LOYALTY": {
+    "TITLE": "Programa de Fidelidad",
+    "POINTS": "Puntos",
+    "TIER": "Nivel",
+    "REDEEM": "Canjear Puntos",
+    "HISTORY": "Historial de Transacciones",
+    "NEXT_TIER": "puntos para el siguiente nivel"
+  },
+  "COMMON": {
+    "LOADING": "Cargando...",
+    "ERROR": "Algo sali\u00f3 mal",
+    "SAVE": "Guardar",
+    "CANCEL": "Cancelar",
+    "CONFIRM": "Confirmar",
+    "DELETE": "Eliminar",
+    "EDIT": "Editar",
+    "BACK": "Volver",
+    "CLOSE": "Cerrar",
+    "YES": "S\u00ed",
+    "NO": "No"
+  }
+}

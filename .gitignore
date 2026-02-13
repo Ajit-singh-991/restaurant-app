@@ -1,0 +1,29 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+/NUL
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+node_modules/
+target/
+dist/
+.angular/
+*.jar
+!.mvn/wrapper/maven-wrapper.jar

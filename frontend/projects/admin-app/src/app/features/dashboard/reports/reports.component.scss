@@ -1,0 +1,22 @@
+.reports-container {
+  max-width: 640px;
+  h2 { margin: 0 0 8px 0; }
+  .subtitle { color: #666; margin: 0 0 24px 0; }
+}
+
+.reports-form-card {
+  .date-range-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    mat-form-field { flex: 1; min-width: 160px; }
+  }
+  .error { color: #c62828; margin-bottom: 12px; }
+  .actions { margin-top: 16px; }
+}

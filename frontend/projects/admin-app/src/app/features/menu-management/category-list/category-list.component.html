@@ -1,0 +1,21 @@
+<div class="category-header">
+  <h2>Categories</h2>
+  <button mat-raised-button color="primary" (click)="openCreate()">
+    <mat-icon>add</mat-icon> Add Category
+  </button>
+</div>
+
+<div *ngIf="loading" class="loading"><mat-spinner diameter="40"></mat-spinner></div>
+
+<div *ngIf="!loading" class="list" cdkDropList (cdkDropListDropped)="drop($event)">
+  <div class="category-row" *ngFor="let cat of categories; let i = index" cdkDrag>
+    <span cdkDragHandle class="drag-handle"><mat-icon>drag_indicator</mat-icon></span>
+    <span class="name">{{ cat.name }}</span>
+    <span class="order">Order: {{ cat.displayOrder ?? i }}</span>
+    <span class="active">{{ cat.active ? 'Active' : 'Inactive' }}</span>
+    <span class="actions">
+      <button mat-icon-button (click)="openEdit(cat)" matTooltip="Edit"><mat-icon>edit</mat-icon></button>
+      <button mat-icon-button color="warn" (click)="deleteCategory(cat)" matTooltip="Delete"><mat-icon>delete</mat-icon></button>
+    </span>
+  </div>
+</div>

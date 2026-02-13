@@ -1,0 +1,50 @@
+<div class="reports-container">
+  <h2>Reports</h2>
+  <p class="subtitle">Generate and download analytics reports by type, date range, and format.</p>
+
+  <mat-card class="reports-form-card">
+    <mat-card-content>
+      <div class="date-range-actions">
+        <span>Quick range:</span>
+        <button mat-stroked-button (click)="setRange(7)">7 Days</button>
+        <button mat-stroked-button (click)="setRange(14)">14 Days</button>
+        <button mat-stroked-button (click)="setRange(30)">30 Days</button>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Start date</mat-label>
+          <input matInput type="date" [(ngModel)]="startDate" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>End date</mat-label>
+          <input matInput type="date" [(ngModel)]="endDate" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline">
+          <mat-label>Report type</mat-label>
+          <mat-select [(ngModel)]="reportType">
+            <mat-option *ngFor="let t of reportTypes" [value]="t.value">{{ t.label }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Format</mat-label>
+          <mat-select [(ngModel)]="format">
+            <mat-option *ngFor="let f of formats" [value]="f.value">{{ f.label }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="error" *ngIf="error">{{ error }}</div>
+
+      <div class="actions">
+        <button mat-raised-button color="primary" (click)="generate()" [disabled]="loading">
+          <mat-icon>download</mat-icon>
+          {{ loading ? 'Generating...' : 'Generate & Download' }}
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

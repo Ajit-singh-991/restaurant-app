@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"C:\\\\Users\\\\RATHORE THE GREAT\\\\restaurant-app\\\\backend\\\\src\")",
+      "Bash(dir:*)",
+      "Bash(cd:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\RATHORE THE GREAT\\\\restaurant-app\\\\backend\\\\src\\\\main\\\\java\\\\com\\\\restaurant\"\" 2>/dev/null || dir \"C:UsersRATHORE THE GREATrestaurant-appbackendsrcmainjavacomrestaurant \")",
+      "Bash(npx ng build:*)",
+      "Bash(npm install:*)",
+      "Bash(mvn compile:*)",
+      "Bash(mvn test:*)",
+      "Bash(mvn clean compile:*)"
+    ]
+  }
+}

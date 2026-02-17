@@ -5,16 +5,16 @@
 -- USERS
 -- =============================================
 INSERT INTO users (username, password, full_name, email, phone, role) VALUES
-('admin', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'System Admin', 'admin@restaurant.com', '1234567890', 'ADMIN'),
-('manager1', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Rahul Sharma', 'rahul@restaurant.com', '1234567891', 'MANAGER'),
-('waiter1', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Priya Patel', 'priya@restaurant.com', '1234567892', 'WAITER'),
-('waiter2', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Amit Kumar', 'amit@restaurant.com', '1234567893', 'WAITER'),
-('kitchen1', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Chef Vikram', 'vikram@restaurant.com', '1234567894', 'KITCHEN'),
-('customer1', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Anita Desai', 'anita@gmail.com', '9876543210', 'CUSTOMER'),
-('customer2', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Rohan Mehta', 'rohan@gmail.com', '9876543211', 'CUSTOMER'),
-('customer3', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Sneha Reddy', 'sneha@gmail.com', '9876543212', 'CUSTOMER'),
-('customer4', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Karan Singh', 'karan@gmail.com', '9876543213', 'CUSTOMER'),
-('customer5', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Meera Joshi', 'meera@gmail.com', '9876543214', 'CUSTOMER');
+('admin', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'System Admin', 'admin@restaurant.com', '1234567890', 'ADMIN'),
+('manager1', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Rahul Sharma', 'rahul@restaurant.com', '1234567891', 'MANAGER'),
+('waiter1', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Priya Patel', 'priya@restaurant.com', '1234567892', 'WAITER'),
+('waiter2', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Amit Kumar', 'amit@restaurant.com', '1234567893', 'WAITER'),
+('kitchen1', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Chef Vikram', 'vikram@restaurant.com', '1234567894', 'KITCHEN'),
+('customer1', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Anita Desai', 'anita@gmail.com', '9876543210', 'CUSTOMER'),
+('customer2', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Rohan Mehta', 'rohan@gmail.com', '9876543211', 'CUSTOMER'),
+('customer3', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Sneha Reddy', 'sneha@gmail.com', '9876543212', 'CUSTOMER'),
+('customer4', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Karan Singh', 'karan@gmail.com', '9876543213', 'CUSTOMER'),
+('customer5', '$2a$10$xZdYMYi26Ei7rYYu8S/0gO/cufrmbA24DKRq3v/jBQKomOoASS/ne', 'Meera Joshi', 'meera@gmail.com', '9876543214', 'CUSTOMER');
 
 -- =============================================
 -- CATEGORIES
